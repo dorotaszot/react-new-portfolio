@@ -8,17 +8,24 @@
   color: #fff;
 } */
 
+.custom-font {
+  font-family: "Amatic SC", cursive;
+}
+
 .bg-green {
   background-color: #1e5631;
 }
 
 .bg-purple {
-  background-color: #360454;
+  background-color: #ff8303;
+  /* background-color: #360454; */
 }
 
 .navbar {
   /* display: flex;
   justify-content: space-between; */
+  position: absolute;
+  width: 100%;
 }
 
 .nav-link {
@@ -28,12 +35,12 @@
 
 .nav-link:hover {
   color: #fff;
-  background-color: rgba(0, 54, 4, 0.3);
+  background-color: rgba(0, 54, 4, 0.1);
   border-radius: 5px;
 }
 
 .active-nav-link {
-  background-color: rgba(0, 54, 4, 0.3);
+  background-color: rgba(0, 54, 4, 0.1);
   border-radius: 5px;
 }
 
@@ -42,28 +49,37 @@
   /* border: #fff; */
 }
 
-/* .navbar-toggler {
-  outline: none;
-  border: none;
-} */
+.bg-image {
+  background-image: url("./img/leaves.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-main {
+  /* background-color: rgba(255, 131, 3, 0.9); */
+  padding: 60px 120px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.home-main h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
 
 @media (max-width: 576px) {
-  /* .navbar {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color: red;
-  } */
-  /* .navbar-toggler-icon {
-    border-color: #fff;
-  } */
-  /* .navbar {
-    flex-direction: column;
-  } */
-
-  /* .navbar {
-    display: flex;
-
-    background-color: red;
-  } */
+  .home-main h1 {
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .home-main {
+    /* background-color: rgba(255, 131, 3, 0.9); */
+    padding: 60px 20px;
+    color: #fff;
+    border-radius: 10px;
+  }
 }
