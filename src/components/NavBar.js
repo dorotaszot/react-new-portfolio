@@ -26,30 +26,31 @@ function NavBar() {
       </nav> */}
 
 
-      <nav className='navbar navbar-expand-sm navbar-light bg-purple'>
-        {/* <div> */}
-          <button className="navbar-toggler color-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon color-white"></span>
+      <nav className='navbar navbar-expand-sm navbar-dark bg-purple '>
+        <div className="container">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="container">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div className="d-flex justify-content-start">
-              <NavLink to='/' exact className="nav-link" activeClassName="active-nav-link">
-                Home
-              </NavLink>
-              <NavLink to='/projects' className="nav-link" activeClassName="active-nav-link">
-                Projects
-              </NavLink>
-              <NavLink to='/about' className="nav-link" activeClassName="active-nav-link">
-                About me
-              </NavLink>
+          <div>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <div className="d-flex justify-content-start">
+                <NavLink to='/' exact className="nav-link" activeClassName="active-nav-link">
+                  Home
+                </NavLink>
+                <NavLink to='/projects' className="nav-link" activeClassName="active-nav-link">
+                  Projects
+                </NavLink>
+                <NavLink to='/about' className="nav-link" activeClassName="active-nav-link">
+                  About me
+                </NavLink>
+              </div>
             </div>
           </div>
-        {/* </div> */}
+       
 
         <div className="social-icons">
-          <SocialIcon url="https://www.linkedin.com/in/dorota-szot-7848a0169/" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} bgColor="transparent" className="mr-3"/>
-          <SocialIcon url="https://github.com/dorotaszot" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} bgColor="transparent"/>
+          <SocialIcon url="https://www.linkedin.com/in/dorota-szot-7848a0169/" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} bgColor="transparent" className="mr-3" />
+          <SocialIcon url="https://github.com/dorotaszot" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} bgColor="transparent" />
         </div>
         </div>
       </nav>
